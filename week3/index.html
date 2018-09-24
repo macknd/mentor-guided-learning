@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title lang="en">Princeton University</title>
+        <html lang="en" xml:lang="en">
+        <style>
+            .hiddenLabel{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Princeton University</h1>
+            <p>Princeton University is a private Ivy League research university in Princeton, New Jersey. 
+                Founded in 1746 in Elizabeth as the College of New Jersey, Princeton is the fourth-oldest 
+                institution of higher education in the United States and one of the nine colonial colleges 
+                chartered before the American Revolution.</p>
+            <h3>Admissions Form</h3>
+            <form id="form">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required><br>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" required><br>
+
+                <label for="highSchool">High School Name:</label>
+                <input type="text" id="highSchool" required><br>
+
+                <label for="gpa">GPA:</label>
+                <input type="number" id="gpa" required><br>
+
+                <p>Extracurricular Activities:</p>
+                <ol>
+                    <li>
+                        <label for="activity1" class="hiddenLabel">Activity #1</label>
+                        <input type="text" id="activity1">
+                    </li>
+                    <li>
+                        <label for="activity2" class="hiddenLabel">Activity #2</label>
+                        <input type="text" id="activity2">
+                    </li>
+                    <li>
+                        <label for="activity3" class="hiddenLabel">Activity #3</label>
+                        <input type="text" id="activity3">
+                    </li>
+                </ol>
+
+                <label for="personalStat">Personal Statement:</label>
+                <textarea id="personalStat" required></textarea><br>
+            </form>
+            <button type="submit" form="form" value="Submit">Submit</button>
+        </section>
+        <section>
+            <a href="http://127.0.0.1:8080/contact.html">Contact Us</a>
+        </section>
+        <script>
+            document.querySelector("button").addEventListener("click",function(){
+                let firstName=document.querySelector("#firstName").value;
+            });
+        </script>
+    </body>
+</html>
