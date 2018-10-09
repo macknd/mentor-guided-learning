@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="./main.css">
         <title>Mackenzi NierDuffy</title>
     </head>
     <body>
-        <nav>
-            <p>About</p>
-            <a href="http://localhost:8080/web-development.html">Web Development</a>
-            <a href="http://localhost:8080/engineering.html">Engineering</a>
-            <a href="http://localhost:8080/newspaper.html">Newspaper</a>
-            <a href="http://localhost:8080/contact.html">Contact</a>
-        </nav>
-        <section>
-            <h1>Mackenzi NierDuffy</h1>
-        </section>
-        <section>
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet, ne pro libris prompta, id pro possim animal albucius, usu et blandit contentiones. Et vidit vulputate has, nemore theophrastus cu duo, est esse 
-            nibh luptatum et. Sed scriptorem definitionem id, ex amet soleat duo. Nam ea falli noster, 
-            sed duis meis pertinax in. Agam explicari vim an, ex autem dolore pri, vel ne probo oblique 
-            euismod.</p>
-            <img alt="Mackenzi NierDuffy" src="https://bloximages.newyork1.vip.townnews.com/moultrienews.com/content/tncms/assets/v3/editorial/1/86/186b9f80-3772-11e8-9da6-7f248c64e16b/5ac3d1044145f.image.jpg?resize=1200%2C1599">
-        </section>
+        <div class="row">
+            <section class="col-12 col-md-6">
+                <h1>Mackenzi NierDuffy</h1>
+            </section>
+            <nav class="col-12 col-md-6">
+                <p class="active-nav-item">About</p>
+                <a class="nav-item--black" href="http://localhost:8080/web-development.html">Web Development</a>
+                <a class="nav-item--black" href="http://localhost:8080/engineering.html">Engineering</a>
+                <a class="nav-item--black" href="http://localhost:8080/newspaper.html">Newspaper</a>
+                <a class="nav-item--black" href="http://localhost:8080/contact.html">Contact</a>
+            </nav>
+        </div>
+        <article class="container">
+            <section class="row">
+                <div class="col-12 col-sm-6">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, ne pro libris prompta, id pro possim animal albucius, usu et blandit contentiones. Et vidit vulputate has, nemore theophrastus cu duo, est esse 
+                    nibh luptatum et. Sed scriptorem definitionem id, ex amet soleat duo. Nam ea falli noster, 
+                    sed duis meis pertinax in. Agam explicari vim an, ex autem dolore pri, vel ne probo oblique 
+                    euismod.</p>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img class="image--full-width" alt="Mackenzi NierDuffy" src="https://bloximages.newyork1.vip.townnews.com/moultrienews.com/content/tncms/assets/v3/editorial/1/86/186b9f80-3772-11e8-9da6-7f248c64e16b/5ac3d1044145f.image.jpg?resize=1200%2C1599">
+                </div>
+            </section>
+        </article>
     </body>
 </html>

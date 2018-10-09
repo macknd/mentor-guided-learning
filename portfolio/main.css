@@ -1,0 +1,17 @@
+.active-nav-item{
+    display: inline-block;
+    color: purple;
+}
+
+.nav-item--black{
+    color: black;
+}
+
+.nav-item--black:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.image--full-width{
+    width: 100%;
+}
